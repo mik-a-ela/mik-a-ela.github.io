@@ -3,6 +3,7 @@ title: Python 기초 정리
 description: 파이썬 핵심 개념 복습
 date: 2026-01-10
 tags: [Python, 기초]
+permalink: /insight/python-basics/
 ---
 
 # Python 기초 정리
