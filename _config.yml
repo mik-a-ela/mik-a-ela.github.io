@@ -1,7 +1,7 @@
 # Site settings
 title: Hello, Unknown
 description: Mika's Uncharted Log
-baseurl: "" # 서브패스가 있다면 입력 (예: "/blog")
+baseurl: ""
 url: "https://mik-a-ela.github.io"
 
 # Build settings
@@ -11,47 +11,13 @@ highlighter: rouge
 # Permalink
 permalink: /:categories/:title/
 
-# Collections for categories
-collections:
-  bridge:
-    output: true
-    permalink: /bridge/:title/
-  insight:
-    output: true
-    permalink: /insight/:title/
-  lab:
-    output: true
-    permalink: /lab/:title/
-  log:
-    output: true
-    permalink: /log/:title/
-
-# Default values
+# Default values for posts
 defaults:
   - scope:
       path: ""
-      type: "bridge"
+      type: "posts"
     values:
       layout: "post"
-      category: "Bridge"
-  - scope:
-      path: ""
-      type: "insight"
-    values:
-      layout: "post"
-      category: "Insight"
-  - scope:
-      path: ""
-      type: "lab"
-    values:
-      layout: "post"
-      category: "Lab"
-  - scope:
-      path: ""
-      type: "log"
-    values:
-      layout: "post"
-      category: "Log"
 
 # Navigation
 navigation:
