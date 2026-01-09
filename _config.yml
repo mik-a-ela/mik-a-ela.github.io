@@ -8,8 +8,8 @@ url: "https://mik-a-ela.github.io"
 markdown: kramdown
 highlighter: rouge
 
-# Permalink
-permalink: /:categories/:title/
+# Permalink - 간단한 형식으로 변경
+permalink: pretty
 
 # Default values for posts
 defaults:
