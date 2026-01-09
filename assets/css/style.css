@@ -1,32 +1,32 @@
 /* ===== CSS Variables ===== */
 :root {
-  --color-bg: #111827;
-  --color-surface: #1f2937;
-  --color-surface-hover: #374151;
-  --color-border: #374151;
-  --color-border-hover: #4b5563;
-  --color-text: #f9fafb;
-  --color-text-secondary: #d1d5db;
-  --color-text-muted: #9ca3af;
+  --color-bg: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f3f5;
+  --color-border: #e9ecef;
+  --color-border-hover: #dee2e6;
+  --color-text: #212529;
+  --color-text-secondary: #495057;
+  --color-text-muted: #868e96;
 
   /* Category Colors */
-  --color-bridge: #f472b6;
-  --color-bridge-bg: rgba(244, 114, 182, 0.15);
-  --color-insight: #60a5fa;
-  --color-insight-bg: rgba(96, 165, 250, 0.15);
-  --color-lab: #4ade80;
-  --color-lab-bg: rgba(74, 222, 128, 0.15);
-  --color-log: #fbbf24;
-  --color-log-bg: rgba(251, 191, 36, 0.15);
+  --color-bridge: #e64980;
+  --color-bridge-bg: rgba(230, 73, 128, 0.1);
+  --color-insight: #3b82f6;
+  --color-insight-bg: rgba(59, 130, 246, 0.1);
+  --color-lab: #10b981;
+  --color-lab-bg: rgba(16, 185, 129, 0.1);
+  --color-log: #f59e0b;
+  --color-log-bg: rgba(245, 158, 11, 0.1);
 
-  --color-primary: #818cf8;
-  --color-primary-hover: #a5b4fc;
+  --color-primary: #3e64ff;
+  --color-primary-hover: #2851e3;
 
   --font-sans: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
 
-  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--color-border);
-  --shadow-card-hover: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--color-border-hover);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 1px var(--color-border);
+  --shadow-card-hover: 0 8px 25px rgba(0, 0, 0, 0.1), 0 0 0 1px var(--color-border-hover);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -73,7 +73,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(17, 24, 39, 0.85);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
