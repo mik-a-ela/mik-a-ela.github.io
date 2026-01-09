@@ -16,28 +16,12 @@ title: Home
     </nav>
 
     <div class="posts-grid" id="posts-grid">
-        {% assign all_posts = "" | split: "" %}
-
-        {% for post in site.bridge %}
-        {% assign all_posts = all_posts | push: post %}
-        {% endfor %}
-        {% for post in site.insight %}
-        {% assign all_posts = all_posts | push: post %}
-        {% endfor %}
-        {% for post in site.lab %}
-        {% assign all_posts = all_posts | push: post %}
-        {% endfor %}
-        {% for post in site.log %}
-        {% assign all_posts = all_posts | push: post %}
-        {% endfor %}
-
-        {% assign sorted_posts = all_posts | sort: 'date' | reverse %}
-
-        {% for post in sorted_posts %}
-        <article class="card" data-category="{{ post.category | downcase }}">
+        {% for post in site.posts %}
+        {% assign cat = post.categories | first | downcase %}
+        <article class="card" data-category="{{ cat }}">
             <a href="{{ post.url | relative_url }}" class="card-link">
                 <div class="card-header">
-                    <span class="card-badge badge-{{ post.category | downcase }}">{{ post.category }}</span>
+                    <span class="card-badge badge-{{ cat }}">{{ post.categories | first }}</span>
                     <time class="card-date">{{ post.date | date: "%Y.%m.%d" }}</time>
                 </div>
                 <h2 class="card-title">{{ post.title }}</h2>
@@ -64,13 +48,11 @@ title: Home
 
         tabs.forEach(tab => {
             tab.addEventListener('click', function () {
-                // Update active tab
                 tabs.forEach(t => t.classList.remove('active'));
                 this.classList.add('active');
 
                 const category = this.dataset.category;
 
-                // Filter cards
                 cards.forEach(card => {
                     if (category === 'all' || card.dataset.category === category) {
                         card.style.display = 'block';
