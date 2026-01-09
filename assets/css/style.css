@@ -1,13 +1,13 @@
 /* ===== CSS Variables ===== */
 :root {
-  --color-bg: #0a0a0b;
-  --color-surface: #18181b;
-  --color-surface-hover: #27272a;
-  --color-border: #27272a;
-  --color-border-hover: #3f3f46;
-  --color-text: #fafafa;
-  --color-text-secondary: #a1a1aa;
-  --color-text-muted: #71717a;
+  --color-bg: #111827;
+  --color-surface: #1f2937;
+  --color-surface-hover: #374151;
+  --color-border: #374151;
+  --color-border-hover: #4b5563;
+  --color-text: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-muted: #9ca3af;
 
   /* Category Colors */
   --color-bridge: #f472b6;
@@ -16,17 +16,17 @@
   --color-insight-bg: rgba(96, 165, 250, 0.15);
   --color-lab: #4ade80;
   --color-lab-bg: rgba(74, 222, 128, 0.15);
-  --color-log: #facc15;
-  --color-log-bg: rgba(250, 204, 21, 0.15);
+  --color-log: #fbbf24;
+  --color-log-bg: rgba(251, 191, 36, 0.15);
 
-  --color-primary: #a78bfa;
-  --color-primary-hover: #c4b5fd;
+  --color-primary: #818cf8;
+  --color-primary-hover: #a5b4fc;
 
   --font-sans: 'Inter', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'Fira Code', 'JetBrains Mono', monospace;
 
-  --shadow-card: 0 0 0 1px var(--color-border);
-  --shadow-card-hover: 0 0 0 1px var(--color-border-hover), 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--color-border);
+  --shadow-card-hover: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--color-border-hover);
 
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -73,7 +73,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 11, 0.8);
+  background: rgba(17, 24, 39, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
@@ -166,20 +166,19 @@ a {
 }
 
 .home-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-bottom: 8px;
-  background: linear-gradient(135deg, #fff 0%, #a1a1aa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--color-text);
 }
 
 .home-subtitle {
-  font-size: 1rem;
-  color: var(--color-text-muted);
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
   font-weight: 400;
+  letter-spacing: 0.02em;
 }
 
 /* ===== Category Tabs ===== */

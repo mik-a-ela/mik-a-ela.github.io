@@ -1,6 +1,6 @@
 # Site settings
-title: Mika's Blog
-description: 개발자 Mika의 기술 블로그
+title: Hello, Unknown
+description: Mika's Uncharted Log
 baseurl: "" # 서브패스가 있다면 입력 (예: "/blog")
 url: "https://mik-a-ela.github.io"
 
@@ -57,13 +57,13 @@ defaults:
 navigation:
   - title: Bridge
     url: /bridge/
-    description: 나의 소개와 커리어 이야기
+    description: About Me
   - title: Insight
     url: /insight/
-    description: 최신 기술 트렌드와 파이썬/CS 이론 공부
+    description: Study
   - title: Lab
     url: /lab/
-    description: 직접 만든 코드와 미니 프로젝트
+    description: Mini Project
   - title: Log
     url: /log/
-    description: 에러 해결과 개발 일지
+    description: Trial & Error
