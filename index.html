@@ -16,12 +16,13 @@ title: Home
     </nav>
 
     <div class="posts-grid" id="posts-grid">
+        <!-- site.posts에서 가져오기 -->
         {% for post in site.posts %}
-        {% assign cat = post.categories | first | downcase %}
-        <article class="card" data-category="{{ cat }}">
+        {% assign cat = post.categories | first | default: "Uncategorized" %}
+        <article class="card" data-category="{{ cat | downcase }}">
             <a href="{{ post.url | relative_url }}" class="card-link">
                 <div class="card-header">
-                    <span class="card-badge badge-{{ cat }}">{{ post.categories | first }}</span>
+                    <span class="card-badge badge-{{ cat | downcase }}">{{ cat }}</span>
                     <time class="card-date">{{ post.date | date: "%Y.%m.%d" }}</time>
                 </div>
                 <h2 class="card-title">{{ post.title }}</h2>
@@ -34,6 +35,67 @@ title: Home
                     <span class="card-tag">#{{ tag }}</span>
                     {% endfor %}
                 </div>
+                {% endif %}
+            </a>
+        </article>
+        {% endfor %}
+
+        <!-- 컬렉션에서도 가져오기 -->
+        {% for post in site.bridge %}
+        <article class="card" data-category="bridge">
+            <a href="{{ post.url | relative_url }}" class="card-link">
+                <div class="card-header">
+                    <span class="card-badge badge-bridge">Bridge</span>
+                    <time class="card-date">{{ post.date | date: "%Y.%m.%d" }}</time>
+                </div>
+                <h2 class="card-title">{{ post.title }}</h2>
+                {% if post.description %}
+                <p class="card-description">{{ post.description }}</p>
+                {% endif %}
+            </a>
+        </article>
+        {% endfor %}
+
+        {% for post in site.insight %}
+        <article class="card" data-category="insight">
+            <a href="{{ post.url | relative_url }}" class="card-link">
+                <div class="card-header">
+                    <span class="card-badge badge-insight">Insight</span>
+                    <time class="card-date">{{ post.date | date: "%Y.%m.%d" }}</time>
+                </div>
+                <h2 class="card-title">{{ post.title }}</h2>
+                {% if post.description %}
+                <p class="card-description">{{ post.description }}</p>
+                {% endif %}
+            </a>
+        </article>
+        {% endfor %}
+
+        {% for post in site.lab %}
+        <article class="card" data-category="lab">
+            <a href="{{ post.url | relative_url }}" class="card-link">
+                <div class="card-header">
+                    <span class="card-badge badge-lab">Lab</span>
+                    <time class="card-date">{{ post.date | date: "%Y.%m.%d" }}</time>
+                </div>
+                <h2 class="card-title">{{ post.title }}</h2>
+                {% if post.description %}
+                <p class="card-description">{{ post.description }}</p>
+                {% endif %}
+            </a>
+        </article>
+        {% endfor %}
+
+        {% for post in site.log %}
+        <article class="card" data-category="log">
+            <a href="{{ post.url | relative_url }}" class="card-link">
+                <div class="card-header">
+                    <span class="card-badge badge-log">Log</span>
+                    <time class="card-date">{{ post.date | date: "%Y.%m.%d" }}</time>
+                </div>
+                <h2 class="card-title">{{ post.title }}</h2>
+                {% if post.description %}
+                <p class="card-description">{{ post.description }}</p>
                 {% endif %}
             </a>
         </article>
