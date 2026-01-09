@@ -1,0 +1,69 @@
+# Site settings
+title: Mika's Blog
+description: 개발자 Mika의 기술 블로그
+baseurl: "" # 서브패스가 있다면 입력 (예: "/blog")
+url: "https://mik-a-ela.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalink
+permalink: /:categories/:title/
+
+# Collections for categories
+collections:
+  bridge:
+    output: true
+    permalink: /bridge/:title/
+  insight:
+    output: true
+    permalink: /insight/:title/
+  lab:
+    output: true
+    permalink: /lab/:title/
+  log:
+    output: true
+    permalink: /log/:title/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "bridge"
+    values:
+      layout: "post"
+      category: "Bridge"
+  - scope:
+      path: ""
+      type: "insight"
+    values:
+      layout: "post"
+      category: "Insight"
+  - scope:
+      path: ""
+      type: "lab"
+    values:
+      layout: "post"
+      category: "Lab"
+  - scope:
+      path: ""
+      type: "log"
+    values:
+      layout: "post"
+      category: "Log"
+
+# Navigation
+navigation:
+  - title: Bridge
+    url: /bridge/
+    description: 나의 소개와 커리어 이야기
+  - title: Insight
+    url: /insight/
+    description: 최신 기술 트렌드와 파이썬/CS 이론 공부
+  - title: Lab
+    url: /lab/
+    description: 직접 만든 코드와 미니 프로젝트
+  - title: Log
+    url: /log/
+    description: 에러 해결과 개발 일지
