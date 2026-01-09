@@ -1,8 +1,9 @@
 ---
+layout: post
 title: "Project 01: 지능형 숫자 맞추기 게임"
 description: 컴퓨터가 생각한 비밀 숫자를 맞혀라!
 date: 2026-01-10
-categories: [Lab]
+categories: Lab
 tags: [Python, 게임, 기초]
 ---
 
