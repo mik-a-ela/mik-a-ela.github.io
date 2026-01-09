@@ -8,6 +8,9 @@ url: "https://mik-a-ela.github.io"
 markdown: kramdown
 highlighter: rouge
 
+# IMPORTANT: 미래 날짜 포스트 허용
+future: true
+
 # Permalink
 permalink: /:categories/:title/
 
