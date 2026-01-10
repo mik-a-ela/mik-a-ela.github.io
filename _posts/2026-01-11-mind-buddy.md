@@ -5,6 +5,7 @@ date: 2026-01-11
 categories: Project
 description: "AI 도구(Gemini, ChatGPT, Claude)를 활용해 1인 개발로 완성한 힐링 웹 앱 개발기"
 tags: [AI, 사이드프로젝트, 웹개발, 부트캠프]
+published: false
 ---
 
 > "심리 상담은 무겁지만, 귀여운 위로는 필요하니까."
