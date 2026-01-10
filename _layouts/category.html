@@ -8,7 +8,10 @@ layout: default
     </header>
 
     <div class="posts-list">
-        {% assign posts = site[page.collection] | sort: 'date' | reverse %}
+        {% assign category_name = page.title | downcase %}
+        {% assign posts = site.posts | where_exp: "post", "post.categories contains category_name" | sort: 'date' |
+        reverse %}
+
         {% if posts.size > 0 %}
         {% for post in posts %}
         <article class="post-card">
