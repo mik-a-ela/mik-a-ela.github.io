@@ -114,36 +114,6 @@ AI 도구(Gemini, ChatGPT, Claude)를 활용해 1인 개발로 완성한 힐링 
 - 👃 냄새 2가지
 - 👅 맛 1가지
 
-### 💻 진정요법 코드 구조
-
-```javascript
-const therapies = {
-  breathing: {
-    name: '숨 고르기',
-    icon: '🌬️',
-    description: '4-7-8 호흡법으로 마음을 가라앉혀요',
-    steps: ['4초 들이쉬기', '7초 멈추기', '8초 내쉬기']
-  },
-  shoulder: {
-    name: '어깨 내리기', 
-    icon: '🧘',
-    description: '긴장된 어깨를 천천히 풀어줘요'
-  },
-  grounding: {
-    name: '그라운딩',
-    icon: '🌍',
-    description: '5-4-3-2-1 감각 집중법',
-    senses: {
-      see: 5,    // 보이는 것
-      feel: 4,   // 느껴지는 것
-      hear: 3,   // 들리는 것
-      smell: 2,  // 냄새
-      taste: 1   // 맛
-    }
-  }
-};
-```
-
 ---
 
 ## 5. 회고: 내 것이 되는 과정
