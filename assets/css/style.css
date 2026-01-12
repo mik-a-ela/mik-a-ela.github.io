@@ -605,6 +605,38 @@ a {
   color: var(--color-text);
 }
 
+/* ===== Tables ===== */
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2em 0;
+  display: block;
+  overflow-x: auto;
+}
+
+@media (min-width: 600px) {
+  .post-content table {
+    display: table;
+  }
+}
+
+.post-content th,
+.post-content td {
+  border: 1px solid var(--color-border);
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.post-content th {
+  background-color: var(--color-bg);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.post-content td {
+  color: var(--color-text-secondary);
+}
+
 /* ===== Footer ===== */
 .main-footer {
   margin-top: auto;
