@@ -36,3 +36,6 @@ navigation:
   - title: Log
     url: /log/
     description: Trial & Error
+  - title: Project
+    url: /project/
+    description: Side Project
