@@ -18,6 +18,8 @@
   --color-lab-bg: rgba(16, 185, 129, 0.1);
   --color-log: #f59e0b;
   --color-log-bg: rgba(245, 158, 11, 0.1);
+  --color-project: #8b5cf6;
+  --color-project-bg: rgba(139, 92, 246, 0.1);
 
   --color-primary: #3e64ff;
   --color-primary-hover: #2851e3;
@@ -280,6 +282,11 @@ a {
 .badge-log {
   color: var(--color-log);
   background: var(--color-log-bg);
+}
+
+.badge-project {
+  color: var(--color-project);
+  background: var(--color-project-bg);
 }
 
 .card-date {
