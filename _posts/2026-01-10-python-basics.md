@@ -5,6 +5,8 @@ description: 파이썬 핵심 개념 복습
 date: 2026-01-10
 categories: insight
 tags: [Python, 기초]
+published: false
+
 ---
 
 # Python 기초 정리
